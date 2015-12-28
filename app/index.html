@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
+  <head lang="en">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
 </head>
 <body ng-app="todo">
 
-<h1>Hello World!</h1>
+  <div class="container" ng-controller='todoController as tc'>
+    <div class="jumbotron">
+      <h1>TO DO</h1>
+      <p>지금까지 없던, 투두! 썬두!</p>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-7">
+        <form ng-submit="$valid || vc.search(vc.id)">
+        <div class="input-group">
+          <input type="text" class="form-control" required="" ng-model="vc.id" />
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="submit">
+              <i class="fa fa-plus-circle fa-lg"></i>
+            </button>
+          </span>
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>
+
+  
 
 <script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-ui-bootstrap/dist/ui-bootstrap-tpls-0.14.3.js"></script>
 <script src="main.js"></script>
 </body>
 </html>

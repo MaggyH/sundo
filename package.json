@@ -15,7 +15,9 @@
   "dependencies": {
     "browser-sync": "~2.10.1",
     "chai": "^3.4.1",
+    "cors": "^2.7.1",
     "express": "~4.13.3",
+    "express-cors": "0.0.3",
     "gulp": "~3.9.0",
     "gulp-live-server": "0.0.29",
     "jasmine": "^2.4.1",

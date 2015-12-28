@@ -8,10 +8,10 @@ gulp.task('server', function() {
   live.start();
 });
 
-gulp.task('test-browser', function() {
+gulp.task('test-browser', [], function() {
   var svr = new karma.Server({
     configFile: __dirname + '/karma.conf.js',
-    singleRun: false
+    singleRun: true
   });
 
   svr.start();
