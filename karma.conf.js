@@ -1,5 +1,5 @@
 // Karma configuration
-// Generated on Wed Dec 23 2015 16:23:01 GMT+0900 (KST)
+// Generated on Mon Dec 28 2015 05:02:34 GMT+0000 (UTC)
 
 module.exports = function(config) {
   config.set({
@@ -10,14 +10,14 @@ module.exports = function(config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['mocha'],
+    frameworks: ['jasmine'],
 
 
     // list of files / patterns to load in the browser
     files: [
-        'bower_components/angular/angular.js',
-        'app/**/*.js',
-        'test/**/*.js'
+      'bower_components/angular/angular.js',
+      'app/**/*.js',
+      'test/**/*.js'
     ],
 
 
@@ -64,6 +64,7 @@ module.exports = function(config) {
     // if true, Karma captures browsers, runs the tests and exits
     singleRun: false,
 
+    //plugins: ['karma-mocha', 'karma-phantomjs-launcher', 'phantomjs'],
     // Concurrency level
     // how many browser should be started simultanous
     concurrency: Infinity

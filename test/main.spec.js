@@ -4,6 +4,6 @@
 
 describe('todo apps test', function(){
   it('should return true!', function() {
-    chai.assert.isArray([]);
+    expect(true).toBe(true);
   });
 });
